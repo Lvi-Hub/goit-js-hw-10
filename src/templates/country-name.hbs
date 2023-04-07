@@ -9,12 +9,14 @@
     {{name.official}}</p>
   <p><span> Capital:</span> {{capital}}</p>
   <p><span> Population:</span> {{population}} people</p>
-  <p><span> Languages:</span>
-  {{#each languages}}
-    <li>{{this}}</li>
-  {{/each}}
-{{/each}} </p>
-  
+<div class="list-languages">
+   <span> Languages:</span> <ul >
+    {{#each languages}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+{{/each}}
+</div>
 
 {{! name.official - повна назва країни
 capital - столиця
