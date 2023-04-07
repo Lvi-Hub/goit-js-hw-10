@@ -51,6 +51,9 @@ function inputListen(e) {
     })
     .catch(err => {
       cleanFild();
+      if (ref.inputEl.value === '') {
+        return;
+      }
       Notiflix.Notify.failure('Oops, there is no country with that name');
       console.log(err);
     });
